@@ -1,0 +1,9 @@
+<view>
+<view><text>{{detail.title}}</text></view>
+<view><text>{{detail.content}}</text></view>
+<block wx:for="{{detail.picUrl}}">
+  <view><image mode='aspectFit' src='{{item.url}}'></image></view>
+  <view><text>{{item.pic_title}}</text></view>
+</block>
+</view>
+    <!-- <loading hidder='{{hidden}}'>Loading...</loading>     -->
